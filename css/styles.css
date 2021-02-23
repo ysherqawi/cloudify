@@ -233,6 +233,11 @@ a {
   background: #ec3000;
 }
 
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .btn--block {
   width: 100%;
   display: inline-block;
@@ -493,5 +498,46 @@ a {
   .testimonial .quote {
     margin-left: 6rem;
     margin-right: 0;
+  }
+}
+
+/* Collouts */
+.collout {
+  border-radius: 5px;
+  padding: 4rem;
+}
+
+.collout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.collout__heading {
+  color: #fff;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.collout .btn {
+  align-self: center;
+  justify-self: center;
+}
+
+.collout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .collout .grid--cols-2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .collout__content {
+    text-align: left;
+  }
+
+  .collout .btn {
+    justify-self: start;
+    margin: 0 2rem;
   }
 }
